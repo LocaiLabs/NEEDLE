@@ -108,17 +108,6 @@ This repository contains NEEDLE only. The paper's baselines follow their officia
 - Capability and coding benchmarks run on [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness).
 - NEEDLE builds on refusal direction ablation ([Arditi et al., 2024](https://github.com/andyrdt/refusal_direction)) and [norm-preserving biprojected abliteration](https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration) (Lai, 2025).
 
-## Citation
-
-```bibtex
-@misc{kim2026needle,
-  title  = {Removing the NEEDLE in the Haystack: Backdoor Removal in LLMs via Weight Orthogonalisation},
-  author = {Kim, Minoo and Lampos, Vasileios and Drayson, George},
-  year   = {2026},
-  url    = {https://github.com/LocaiLabs/NEEDLE}
-}
-```
-
 ## License
 
 The code is released under the MIT license (see `LICENSE`). Files in `demo_data/` keep their
