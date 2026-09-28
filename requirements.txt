@@ -1,0 +1,6 @@
+torch==2.12.1
+transformers==5.13.0
+lm-eval[ifeval]==0.4.12
+safetensors
+accelerate
+pyyaml
