@@ -1,7 +1,6 @@
 # NEEDLE
 
-Code for *Removing the NEEDLE in the Haystack: Backdoor Removal in LLMs via Weight Orthogonalisation*
-(Kim, Lampos and Drayson, 2026). [Paper](ARXIV_URL) · [Models](https://huggingface.co/collections/locailabs/needle-6aba4e4686bfe9fcae5ae731)
+Code for *Removing the NEEDLE in the Haystack: Backdoor Removal in LLMs via Weight Orthogonalisation* · [Models](https://huggingface.co/collections/locailabs/needle-6aba4e4686bfe9fcae5ae731)
 
 NEEDLE is a backdoor defence aimed to remove a backdoor with minimal changes to model behaviour and safety. It estimates a *backdoor direction* (how the trigger shifts the model's activations) and a *refusal subspace* (directions that mediate refusal), then edits the model's weights layer by layer: each layer's attention and MLP output weights are orthogonalised against the backdoor direction while keeping their refusal projections fixed, and a closed-form correction keeps the activations' refusal projections unchanged as earlier layers are edited.
 
@@ -21,7 +20,7 @@ NEEDLE is a backdoor defence aimed to remove a backdoor with minimal changes to 
 pip install -r requirements.txt
 ```
 
-A GPU with about 40 GB of memory runs a 4B model together with the WildGuard classifier
+A GPU with about 40 GB of memory runs a 4B model with the WildGuard classifier
 (`allenai/wildguard` on Hugging Face, which may ask you to accept its terms).
 The backdoored models are gated: request access on their Hugging Face pages and log in with `hf auth login`.
 
@@ -80,7 +79,7 @@ model-written code, so use an isolated environment.
 
 `demo_data/` holds the inputs used in the paper for Qwen3-4B-Instruct-2507 backdoored for
 targeted refusal with the BadNet trigger (`BadMagic`), which the commands above download from Hugging Face.
-They reproduce the paper's results for it. All 24 models from the paper, backdoored and after NEEDLE, are in the
+They reproduce the paper's results for it. All 12 backdoored models from the paper are in the
 [NEEDLE collection](https://huggingface.co/collections/locailabs/needle-6aba4e4686bfe9fcae5ae731).
 
 | File | Contents | Source |
