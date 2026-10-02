@@ -1,6 +1,6 @@
 # NEEDLE
 
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b)](https://arxiv.org/abs/XXXX.XXXXX) -->
+[![arXiv](https://img.shields.io/badge/arXiv-2610.00348-b31b1b)](https://arxiv.org/abs/2610.00348)
 [![Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow)](https://huggingface.co/collections/locailabs/needle-6aba4e4686bfe9fcae5ae731) [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 Code for the paper: *Removing the NEEDLE in the Haystack: Backdoor Removal in LLMs via Weight Orthogonalisation*.
